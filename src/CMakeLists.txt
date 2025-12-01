@@ -1,0 +1,5 @@
+add_library(core Game.cpp Grid.cpp Cell.cpp ConwayRule.cpp ConsoleRenderer.cpp)
+target_include_directories(core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+add_executable(life main.cpp)
+target_link_libraries(life PRIVATE core sfml-graphics sfml-window sfml-system)
