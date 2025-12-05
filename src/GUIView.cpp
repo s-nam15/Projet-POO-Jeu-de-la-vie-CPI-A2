@@ -14,7 +14,7 @@ void GUIView::render() {
     if (!grid) return;
     
     // Taille d'une cellule en pixels
-    int cellSize = 20;
+    int cellSize = 200;
     int windowWidth = grid->getCols() * cellSize;
     int windowHeight = grid->getRows() * cellSize;
     
