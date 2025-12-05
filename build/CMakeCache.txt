@@ -224,6 +224,9 @@ GameOfLife_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 GameOfLife_SOURCE_DIR:STATIC=/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SFML
+
 
 ########################
 # INTERNAL cache entries

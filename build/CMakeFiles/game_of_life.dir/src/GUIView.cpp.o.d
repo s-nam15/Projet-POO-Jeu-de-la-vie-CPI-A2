@@ -1,6 +1,8 @@
-CMakeFiles/game_of_life.dir/src/Game.cpp.o: \
- /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/Game.cpp \
+CMakeFiles/game_of_life.dir/src/GUIView.cpp.o: \
+ /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/GUIView.cpp \
  /usr/include/stdc-predef.h \
+ /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/GUIView.h \
+ /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/View.h \
  /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/Game.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -123,12 +125,14 @@ CMakeFiles/game_of_life.dir/src/Game.cpp.o: \
  /usr/include/c++/13/bits/vector.tcc \
  /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/Cell.h \
  /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/Rule.h \
- /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/View.h \
- /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/ConwayRule.h \
- /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/ConsoleView.h \
- /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
- /usr/include/c++/13/ios /usr/include/c++/13/exception \
- /usr/include/c++/13/bits/exception_ptr.h \
+ /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/Grid.h \
+ /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/Cell.h \
+ /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
+ /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
+ /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
+ /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
+ /usr/include/c++/13/ostream /usr/include/c++/13/ios \
+ /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
  /usr/include/c++/13/bits/ios_base.h /usr/include/c++/13/ext/atomicity.h \
@@ -161,29 +165,85 @@ CMakeFiles/game_of_life.dir/src/Game.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
- /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/filesystem \
- /usr/include/c++/13/bits/fs_fwd.h /usr/include/c++/13/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
- /usr/include/c++/13/limits /usr/include/c++/13/ctime \
- /usr/include/c++/13/bits/parse_numbers.h \
- /usr/include/c++/13/bits/fs_path.h /usr/include/c++/13/locale \
- /usr/include/c++/13/bits/locale_facets_nonio.h \
+ /usr/include/c++/13/bits/ostream.tcc \
+ /usr/include/SFML/System/FileInputStream.hpp \
+ /usr/include/SFML/System/InputStream.hpp \
+ /usr/include/SFML/System/NonCopyable.hpp \
+ /usr/include/SFML/System/Lock.hpp \
+ /usr/include/SFML/System/MemoryInputStream.hpp \
+ /usr/include/SFML/System/Mutex.hpp /usr/include/SFML/System/Sleep.hpp \
+ /usr/include/SFML/System/String.hpp /usr/include/SFML/System/Utf.hpp \
+ /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/bits/stl_tempbuf.h \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/locale \
+ /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
- /usr/include/c++/13/bits/locale_conv.h /usr/include/c++/13/iomanip \
- /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/sstream \
- /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/codecvt \
- /usr/include/c++/13/ext/concurrence.h \
- /usr/include/c++/13/bits/shared_ptr.h \
- /usr/include/c++/13/bits/shared_ptr_base.h \
- /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/locale_conv.h /usr/include/SFML/System/Utf.inl \
+ /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
+ /usr/include/SFML/System/String.inl /usr/include/SFML/System/Thread.hpp \
+ /usr/include/SFML/System/Thread.inl \
+ /usr/include/SFML/System/ThreadLocal.hpp \
+ /usr/include/SFML/System/ThreadLocalPtr.hpp \
+ /usr/include/SFML/System/ThreadLocalPtr.inl \
+ /usr/include/SFML/System/Vector2.hpp \
+ /usr/include/SFML/System/Vector2.inl \
+ /usr/include/SFML/System/Vector3.hpp \
+ /usr/include/SFML/System/Vector3.inl \
+ /usr/include/SFML/Window/Clipboard.hpp \
+ /usr/include/SFML/Window/Export.hpp /usr/include/SFML/Window/Context.hpp \
+ /usr/include/SFML/Window/GlResource.hpp \
+ /usr/include/SFML/Window/ContextSettings.hpp \
+ /usr/include/SFML/Window/Cursor.hpp /usr/include/SFML/Window/Event.hpp \
+ /usr/include/SFML/Window/Joystick.hpp \
+ /usr/include/SFML/Window/Keyboard.hpp /usr/include/SFML/Window/Mouse.hpp \
+ /usr/include/SFML/Window/Sensor.hpp /usr/include/SFML/Window/Touch.hpp \
+ /usr/include/SFML/Window/VideoMode.hpp \
+ /usr/include/SFML/Window/Window.hpp \
+ /usr/include/SFML/Window/WindowBase.hpp \
+ /usr/include/SFML/Window/Vulkan.hpp \
+ /usr/include/SFML/Window/WindowHandle.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/SFML/Window/WindowStyle.hpp \
+ /usr/include/SFML/Graphics/BlendMode.hpp \
+ /usr/include/SFML/Graphics/Export.hpp \
+ /usr/include/SFML/Graphics/CircleShape.hpp \
+ /usr/include/SFML/Graphics/Shape.hpp \
+ /usr/include/SFML/Graphics/Drawable.hpp \
+ /usr/include/SFML/Graphics/RenderStates.hpp \
+ /usr/include/SFML/Graphics/Transform.hpp \
+ /usr/include/SFML/Graphics/Rect.hpp /usr/include/SFML/Graphics/Rect.inl \
+ /usr/include/SFML/Graphics/Transformable.hpp \
+ /usr/include/SFML/Graphics/VertexArray.hpp \
+ /usr/include/SFML/Graphics/Vertex.hpp \
+ /usr/include/SFML/Graphics/Color.hpp \
+ /usr/include/SFML/Graphics/PrimitiveType.hpp \
+ /usr/include/SFML/Graphics/ConvexShape.hpp \
+ /usr/include/SFML/Graphics/Font.hpp /usr/include/SFML/Graphics/Glyph.hpp \
+ /usr/include/SFML/Graphics/Texture.hpp \
+ /usr/include/SFML/Graphics/Image.hpp /usr/include/c++/13/map \
+ /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h \
- /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/GUIView.h
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/include/c++/13/bits/erase_if.h \
+ /usr/include/SFML/Graphics/RectangleShape.hpp \
+ /usr/include/SFML/Graphics/RenderTarget.hpp \
+ /usr/include/SFML/Graphics/View.hpp \
+ /usr/include/SFML/Graphics/RenderTexture.hpp \
+ /usr/include/SFML/Graphics/RenderWindow.hpp \
+ /usr/include/SFML/Graphics/Shader.hpp \
+ /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
+ /usr/include/SFML/Graphics/Sprite.hpp \
+ /usr/include/SFML/Graphics/Text.hpp \
+ /usr/include/SFML/Graphics/VertexBuffer.hpp /usr/include/c++/13/iostream \
+ /usr/include/c++/13/istream /usr/include/c++/13/bits/istream.tcc

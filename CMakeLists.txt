@@ -4,6 +4,8 @@ project(GameOfLife)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+
 include_directories(include)
 
 set(SOURCES
@@ -15,27 +17,16 @@ set(SOURCES
     src/Game.cpp
     src/ConsoleView.cpp
     src/View.cpp
+    src/GUIView.cpp
 )
 
-add_executable(game_of_life
-    ${SOURCES}
-    src/main.cpp
-)
+add_executable(game_of_life ${SOURCES} src/main.cpp)
+target_link_libraries(game_of_life sfml-graphics sfml-window sfml-system stdc++fs)
 
-add_executable(tests
-    ${SOURCES}
-    tests/tests.cpp
-)
-
-if(MSVC)
-    target_compile_options(game_of_life PRIVATE /W4)
-    target_compile_options(tests PRIVATE /W4)
-else()
-    target_compile_options(game_of_life PRIVATE -Wall -Wextra -pedantic)
-    target_compile_options(tests PRIVATE -Wall -Wextra -pedantic)
-endif()
+add_executable(tests ${SOURCES} tests/tests.cpp)
+target_link_libraries(tests sfml-graphics sfml-window sfml-system stdc++fs)
 
 if(NOT MSVC)
-    target_link_libraries(game_of_life stdc++fs)
-    target_link_libraries(tests stdc++fs)
+    target_compile_options(game_of_life PRIVATE -Wall -Wextra -pedantic)
+    target_compile_options(tests PRIVATE -Wall -Wextra -pedantic)
 endif()

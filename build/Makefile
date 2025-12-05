@@ -277,6 +277,33 @@ src/DeadCell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/DeadCell.cpp.s
 .PHONY : src/DeadCell.cpp.s
 
+src/GUIView.o: src/GUIView.cpp.o
+.PHONY : src/GUIView.o
+
+# target to build an object file
+src/GUIView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/GUIView.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/GUIView.cpp.o
+.PHONY : src/GUIView.cpp.o
+
+src/GUIView.i: src/GUIView.cpp.i
+.PHONY : src/GUIView.i
+
+# target to preprocess a source file
+src/GUIView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/GUIView.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/GUIView.cpp.i
+.PHONY : src/GUIView.cpp.i
+
+src/GUIView.s: src/GUIView.cpp.s
+.PHONY : src/GUIView.s
+
+# target to generate assembly for a file
+src/GUIView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/GUIView.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/GUIView.cpp.s
+.PHONY : src/GUIView.cpp.s
+
 src/Game.o: src/Game.cpp.o
 .PHONY : src/Game.o
 
@@ -431,6 +458,9 @@ help:
 	@echo "... src/DeadCell.o"
 	@echo "... src/DeadCell.i"
 	@echo "... src/DeadCell.s"
+	@echo "... src/GUIView.o"
+	@echo "... src/GUIView.i"
+	@echo "... src/GUIView.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"

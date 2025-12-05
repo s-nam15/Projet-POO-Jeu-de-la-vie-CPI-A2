@@ -4,12 +4,14 @@
 #include "Cell.h"
 #include <iostream>
 
+// methode d'initialisation
 ConsoleView::ConsoleView() : View() {}
 
 void ConsoleView::render() {
     printToConsole();
 }
 
+// Affichage de la grille sur la console 
 void ConsoleView::printToConsole() {
     if (!game) return;
     Grid* grid = game->getGrid();
@@ -27,7 +29,7 @@ void ConsoleView::printToConsole() {
         std::cout << std::endl;
     }
 }
-
+//Sauvegarde de fichier 
 void ConsoleView::saveToFile(int iteration) {
     if (!game) return;
     Grid* grid = game->getGrid();

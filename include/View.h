@@ -14,7 +14,7 @@ public:
     // Setter pour associer le jeu à la vue
     void setGame(Game* g);
 
-    // Méthode virtuelle pure pour le rendu
+    // Methode virtuelle pure pour le rendu
     virtual void render() = 0;
 };
 

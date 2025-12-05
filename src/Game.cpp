@@ -3,6 +3,7 @@
 #include "ConsoleView.h"
 #include <iostream>
 #include <filesystem>
+#include "GUIView.h"
 
 namespace fs = std::filesystem;
 
@@ -69,7 +70,10 @@ void Game::runConsole() {
 }
 
 void Game::runGraphic() {
-    std::cout << "Mode graphique non disponible" << std::endl;
+    GUIView view;
+    view.setGame(this);
+    std::cout << "Mode graphique - Appuyez sur Echap pour quitter" << std::endl;
+    view.render();
 }
 
 void Game::run() {
