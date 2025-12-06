@@ -1,0 +1,4 @@
+/home/seohyun/test1/build/CMakeFiles/game_of_life.dir
+/home/seohyun/test1/build/CMakeFiles/tests.dir
+/home/seohyun/test1/build/CMakeFiles/edit_cache.dir
+/home/seohyun/test1/build/CMakeFiles/rebuild_cache.dir
