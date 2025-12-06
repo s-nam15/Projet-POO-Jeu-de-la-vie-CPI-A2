@@ -8,26 +8,27 @@
 
 class Game {
 private:
-    Grid* grid;
+    Grid* grid; 
     Rule* rule;
     int iterations;
-    int currentIteration;
-    int mode;
-    std::string inputFile;
-    Grid* previousGrid;
+    int currentIteration; // itération où on est
+    int mode; // 0 = console, 1 = graphique
+    std::string inputFile; // Nom du fichier
+    Grid* previousGrid; // grille précédente
 
 public:
     Game(int iter, int mode, const std::string& input);
     ~Game();
-    void loadGame();
+
+    void loadGame(); // Initialisation de la grille
     void runConsole();
     void runGraphic();
-    void run();
-    bool isFinished() const;
+    void run(); // exécuter selon le mode console ou GUI
+    bool isFinished() const; // Vérifier le nombre d'itération est fini
     Grid* getGrid() const;
     int getCurrentIteration() const;
     Rule* getRule() const;
-    void incrementIteration();
+    void incrementIteration(); // currenIteration + 1
 };
 
 #endif

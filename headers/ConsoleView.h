@@ -8,7 +8,7 @@ class ConsoleView : public View {
 public:
     ConsoleView();
     ~ConsoleView() override = default;
-    void render() override;
+    void render() override; // Dessiner la grille sur la console
     void printToConsole();
     void saveToFile(int iteration);
 };

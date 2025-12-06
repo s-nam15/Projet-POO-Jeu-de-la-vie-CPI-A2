@@ -3,10 +3,10 @@
 #include "Game.h"
  
 void printUsage(const char* programName) {
-    std::cout << "Usage: " << programName << " <fichier> <mode> <iterations>" << std::endl;
+    std::cout << "Usage: " << programName << " <fichier> <mode> <itérations>" << std::endl;
     std::cout << "  <fichier>     : Chemin vers le fichier" << std::endl;
     std::cout << "  <mode>        : 0 = console, 1 = graphique" << std::endl;
-    std::cout << "  <iterations>  : Nombre max" << std::endl;
+    std::cout << "  <itérations>  : Nombre max" << std::endl;
 }
  
 int main(int argc, char* argv[]) {
@@ -21,12 +21,12 @@ int main(int argc, char* argv[]) {
     int iterations = std::stoi(argv[3]);
  
     if (mode != 0 && mode != 1) {
-        std::cerr << "Mode doit etre 0 ou 1" << std::endl;
+        std::cerr << "Mode doit être 0 ou 1" << std::endl;
         return 1;
     }
  
     if (iterations <= 0) {
-        std::cerr << "Iterations > 0" << std::endl;
+        std::cerr << "Itérations > 0" << std::endl;
         return 1;
     }
  

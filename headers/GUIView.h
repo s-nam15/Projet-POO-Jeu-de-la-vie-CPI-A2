@@ -7,7 +7,7 @@ class GUIView : public View {
 public:
     GUIView();
     ~GUIView() override = default;
-    void render() override;
+    void render() override; // Dessiner la grille sur écran GUI
 };
 
 #endif
