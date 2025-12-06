@@ -5,15 +5,15 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
-GUIView::GUIView() : View(), delayMs(50) {} // Vitesse moyenne par défaut
+GUIView::GUIView() : View(), delayMs(500) {} // Vitesse moyenne par défaut
 
 void GUIView::setSpeed(int speed) {
     switch(speed) {
         case 1: delayMs = 1000; break; // Lent
         case 2: delayMs = 500;  break; // Moyen
         case 3: delayMs = 200;  break; // Rapide
-        case 4: delayMs = 50;   break; // Très rapide
-        default: delayMs = 50; break;
+        case 5: delayMs = 50;   break; // Très rapide
+        default: delayMs = 500; break;
     }
 }
 
@@ -59,21 +59,21 @@ void GUIView::render() {
                 if (event.key.code == sf::Keyboard::Escape) {
                     window.close();
                 }
-                // Contrôle vitesse
-                else if (event.key.code == sf::Keyboard::Num1) {
+                // Contrôle vitesse - touches principales ET pavé numérique
+                else if (event.key.code == sf::Keyboard::Num1 || event.key.code == sf::Keyboard::Numpad1) {
                     setSpeed(1);
                     std::cout << "Vitesse: LENTE" << std::endl;
                 }
-                else if (event.key.code == sf::Keyboard::Num2) {
+                else if (event.key.code == sf::Keyboard::Num2 || event.key.code == sf::Keyboard::Numpad2) {
                     setSpeed(2);
                     std::cout << "Vitesse: MOYENNE" << std::endl;
                 }
-                else if (event.key.code == sf::Keyboard::Num3) {
+                else if (event.key.code == sf::Keyboard::Num3 || event.key.code == sf::Keyboard::Numpad3) {
                     setSpeed(3);
                     std::cout << "Vitesse: RAPIDE" << std::endl;
                 }
-                else if (event.key.code == sf::Keyboard::Num4) {
-                    setSpeed(4);
+                else if (event.key.code == sf::Keyboard::Num5 || event.key.code == sf::Keyboard::Numpad5) {
+                    setSpeed(5);
                     std::cout << "Vitesse: TRES RAPIDE" << std::endl;
                 }
                 // Pause
@@ -122,7 +122,7 @@ void GUIView::render() {
                 if (cell && cell->isAlive()) {
                     cellShape.setFillColor(sf::Color::Black);
                 } else {
-                    cellShape.setFillColor(sf::Color(220, 220, 220));
+                    cellShape.setFillColor(sf::Color(225, 225, 225));
                 }
                 
                 window.draw(cellShape);
