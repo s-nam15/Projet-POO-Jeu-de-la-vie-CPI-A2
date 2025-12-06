@@ -277,6 +277,33 @@ src/DeadCell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/DeadCell.cpp.s
 .PHONY : src/DeadCell.cpp.s
 
+src/FileManager.o: src/FileManager.cpp.o
+.PHONY : src/FileManager.o
+
+# target to build an object file
+src/FileManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/FileManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/FileManager.cpp.o
+.PHONY : src/FileManager.cpp.o
+
+src/FileManager.i: src/FileManager.cpp.i
+.PHONY : src/FileManager.i
+
+# target to preprocess a source file
+src/FileManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/FileManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/FileManager.cpp.i
+.PHONY : src/FileManager.cpp.i
+
+src/FileManager.s: src/FileManager.cpp.s
+.PHONY : src/FileManager.s
+
+# target to generate assembly for a file
+src/FileManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/FileManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/FileManager.cpp.s
+.PHONY : src/FileManager.cpp.s
+
 src/GUIView.o: src/GUIView.cpp.o
 .PHONY : src/GUIView.o
 
@@ -458,6 +485,9 @@ help:
 	@echo "... src/DeadCell.o"
 	@echo "... src/DeadCell.i"
 	@echo "... src/DeadCell.s"
+	@echo "... src/FileManager.o"
+	@echo "... src/FileManager.i"
+	@echo "... src/FileManager.s"
 	@echo "... src/GUIView.o"
 	@echo "... src/GUIView.i"
 	@echo "... src/GUIView.s"

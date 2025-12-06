@@ -5,7 +5,21 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
-GUIView::GUIView() : View() {}
+GUIView::GUIView() : View(), delayMs(50) {} // Vitesse moyenne par défaut
+
+void GUIView::setSpeed(int speed) {
+    switch(speed) {
+        case 1: delayMs = 1000; break; // Lent
+        case 2: delayMs = 500;  break; // Moyen
+        case 3: delayMs = 200;  break; // Rapide
+        case 4: delayMs = 50;   break; // Très rapide
+        default: delayMs = 50; break;
+    }
+}
+
+int GUIView::getDelayMs() const {
+    return delayMs;
+}
 
 void GUIView::render() {
     if (!game) return;
@@ -13,52 +27,83 @@ void GUIView::render() {
     Grid* grid = game->getGrid();
     if (!grid) return;
     
-    // Taille d'une cellule en pixels
-    int cellSize = 20;
+    int cellSize = 15;
     int windowWidth = grid->getCols() * cellSize;
     int windowHeight = grid->getRows() * cellSize;
     
-    // Créer la fenêtre
     sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "Jeu de la Vie - Conway");
-    window.setFramerateLimit(10); // 2 images/seconde pour bien voir
+    window.setFramerateLimit(60);
     
     Grid* previousGrid = nullptr;
     
-    // Boucle principale
+    // Afficher les contrôles
+    std::cout << "\n=== CONTROLES ===" << std::endl;
+    std::cout << "1 : Vitesse lente" << std::endl;
+    std::cout << "2 : Vitesse moyenne" << std::endl;
+    std::cout << "3 : Vitesse rapide" << std::endl;
+    std::cout << "4 : Vitesse tres rapide" << std::endl;
+    std::cout << "ESPACE : Pause/Reprendre" << std::endl;
+    std::cout << "ECHAP : Quitter\n" << std::endl;
+    
+    bool paused = false;
+    
     while (window.isOpen()) {
-        // Gestion des événements
         sf::Event event;
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
                 window.close();
             }
-            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
-                window.close();
+            
+            if (event.type == sf::Event::KeyPressed) {
+                // Quitter
+                if (event.key.code == sf::Keyboard::Escape) {
+                    window.close();
+                }
+                // Contrôle vitesse
+                else if (event.key.code == sf::Keyboard::Num1) {
+                    setSpeed(1);
+                    std::cout << "Vitesse: LENTE" << std::endl;
+                }
+                else if (event.key.code == sf::Keyboard::Num2) {
+                    setSpeed(2);
+                    std::cout << "Vitesse: MOYENNE" << std::endl;
+                }
+                else if (event.key.code == sf::Keyboard::Num3) {
+                    setSpeed(3);
+                    std::cout << "Vitesse: RAPIDE" << std::endl;
+                }
+                else if (event.key.code == sf::Keyboard::Num4) {
+                    setSpeed(4);
+                    std::cout << "Vitesse: TRES RAPIDE" << std::endl;
+                }
+                // Pause
+                else if (event.key.code == sf::Keyboard::Space) {
+                    paused = !paused;
+                    std::cout << (paused ? "PAUSE" : "REPRENDRE") << std::endl;
+                }
             }
         }
         
-        // Mise à jour de la simulation
-        if (!game->isFinished()) {
-            // Sauvegarder état précédent
+        // Mise à jour uniquement si non pausé
+        if (!paused && !game->isFinished()) {
             if (previousGrid) delete previousGrid;
             previousGrid = grid->clone();
             
-            // Appliquer règles
             grid->applyRules(game->getRule());
             grid->update();
             game->incrementIteration();
             
             std::cout << "Iteration: " << game->getCurrentIteration() << std::endl;
             
-             sf::sleep(sf::milliseconds(100));
-
-            // Vérifier stabilité
+            // Délai contrôlable
+            sf::sleep(sf::milliseconds(delayMs));
+            
             if (previousGrid && grid->isEqual(*previousGrid)) {
                 std::cout << "Grille stabilisee !" << std::endl;
                 sf::sleep(sf::seconds(2));
                 window.close();
             }
-        } else {
+        } else if (game->isFinished() && !paused) {
             std::cout << "Max iterations" << std::endl;
             sf::sleep(sf::seconds(2));
             window.close();
@@ -77,7 +122,7 @@ void GUIView::render() {
                 if (cell && cell->isAlive()) {
                     cellShape.setFillColor(sf::Color::Black);
                 } else {
-                    cellShape.setFillColor(sf::Color(190, 190, 190));
+                    cellShape.setFillColor(sf::Color(220, 220, 220));
                 }
                 
                 window.draw(cellShape);

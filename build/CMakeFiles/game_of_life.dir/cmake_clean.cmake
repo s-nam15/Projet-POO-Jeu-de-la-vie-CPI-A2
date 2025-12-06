@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.o.d"
   "CMakeFiles/game_of_life.dir/src/DeadCell.cpp.o"
   "CMakeFiles/game_of_life.dir/src/DeadCell.cpp.o.d"
+  "CMakeFiles/game_of_life.dir/src/FileManager.cpp.o"
+  "CMakeFiles/game_of_life.dir/src/FileManager.cpp.o.d"
   "CMakeFiles/game_of_life.dir/src/GUIView.cpp.o"
   "CMakeFiles/game_of_life.dir/src/GUIView.cpp.o.d"
   "CMakeFiles/game_of_life.dir/src/Game.cpp.o"

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/src/ConwayRule.cpp.o.d"
   "CMakeFiles/tests.dir/src/DeadCell.cpp.o"
   "CMakeFiles/tests.dir/src/DeadCell.cpp.o.d"
+  "CMakeFiles/tests.dir/src/FileManager.cpp.o"
+  "CMakeFiles/tests.dir/src/FileManager.cpp.o.d"
   "CMakeFiles/tests.dir/src/GUIView.cpp.o"
   "CMakeFiles/tests.dir/src/GUIView.cpp.o.d"
   "CMakeFiles/tests.dir/src/Game.cpp.o"

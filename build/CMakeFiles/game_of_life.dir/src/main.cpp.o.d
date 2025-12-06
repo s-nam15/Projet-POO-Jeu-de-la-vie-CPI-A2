@@ -157,4 +157,5 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
  /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/Cell.h \
- /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/Rule.h
+ /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/Rule.h \
+ /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/View.h

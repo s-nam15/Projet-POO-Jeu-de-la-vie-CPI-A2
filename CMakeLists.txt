@@ -18,6 +18,7 @@ set(SOURCES
     src/ConsoleView.cpp
     src/View.cpp
     src/GUIView.cpp
+    src/FileManager.cpp
 )
 
 add_executable(game_of_life ${SOURCES} src/main.cpp)

@@ -1,50 +1,37 @@
 #include "Game.h"
 #include "ConwayRule.h"
 #include "ConsoleView.h"
+#include "GUIView.h"
+#include "FileManager.h"
 #include <iostream>
 #include <filesystem>
-#include "GUIView.h"
 
 namespace fs = std::filesystem;
- 
-//Initialisation des variables membres
-Game::Game(int iter, int mode, const std::string& input, int speed)
-    : grid(nullptr), previousGrid(nullptr), rule(nullptr),
-      iterations(iter), currentIteration(0),
-      mode(mode), inputFile(input), speedMS(speed)
-{
+
+Game::Game(int iter, int mode, const std::string& input)
+    : grid(nullptr), rule(nullptr), iterations(iter), 
+      currentIteration(0), mode(mode), inputFile(input), previousGrid(nullptr) {
     rule = new ConwayRule();
 }
 
-// Nettoyage des objets 
 Game::~Game() {
     delete grid;
     delete rule;
     delete previousGrid;
 }
 
-//chargement de l'état initial du jeu à partir du fichier spécifique 
 void Game::loadGame() {
     grid = new Grid();
     grid->loadFile(inputFile);
     std::cout << "Grille chargee: " << grid->getRows() << "x" << grid->getCols() << std::endl;
 }
 
-//Execution en mode console 
 void Game::runConsole() {
     ConsoleView view;
     view.setGame(this);
     
-    std::string baseName = inputFile.substr(inputFile.find_last_of("/\\") + 1);
-    size_t dotPos = baseName.find_last_of('.');
-    if (dotPos != std::string::npos) {
-        baseName = baseName.substr(0, dotPos);
-    }
-    
-    std::string outputDir = baseName + "_out";
-    if (!fs::exists(outputDir)) {
-        fs::create_directory(outputDir);
-    }
+    std::string baseName = FileManager::getBaseName(inputFile);
+    std::string outputDir = FileManager::createOutputDirectory(baseName);
     
     std::cout << "Mode console - Simulation de " << iterations << " iterations" << std::endl;
     
@@ -61,8 +48,9 @@ void Game::runConsole() {
         grid->applyRules(rule);
         grid->update();
         
-        std::string filename = outputDir + "/iteration_" + std::to_string(currentIteration) + ".txt";
-        grid->saveToFile(filename);
+        std::string iterFilename = outputDir + "/iteration_" + std::to_string(currentIteration) + ".txt";
+        grid->saveToFile(iterFilename);
+        
         view.printToConsole();
         
         if (previousGrid && grid->isEqual(*previousGrid)) {
@@ -75,7 +63,6 @@ void Game::runConsole() {
     std::cout << "Resultats sauvegardes dans: " << outputDir << std::endl;
 }
 
-//Execution en mode graphique
 void Game::runGraphic() {
     GUIView view;
     view.setGame(this);
