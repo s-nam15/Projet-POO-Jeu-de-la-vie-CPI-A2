@@ -18,6 +18,7 @@ std::string FileManager::getBaseName(const std::string& filepath) {
     return filename;
 }
 
+    // Crée un dossier de sortie
 std::string FileManager::createOutputDirectory(const std::string& baseName) {
     std::string outputDir = baseName + "_out";
     
@@ -28,6 +29,7 @@ std::string FileManager::createOutputDirectory(const std::string& baseName) {
     return outputDir;
 }
 
+    // Vérifie si un fichier existe
 bool FileManager::fileExists(const std::string& filepath) {
     return fs::exists(filepath);
 }

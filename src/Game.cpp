@@ -8,6 +8,7 @@
 
 namespace fs = std::filesystem;
 
+// Constructeur qui initialise le jeu avec les paramètres reçus
 Game::Game(int iter, int mode, const std::string& input)
     : grid(nullptr), rule(nullptr), iterations(iter), 
       currentIteration(0), mode(mode), inputFile(input), previousGrid(nullptr) {

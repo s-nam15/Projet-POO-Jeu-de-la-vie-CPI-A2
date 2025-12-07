@@ -14,31 +14,34 @@ void GUIView::setSpeed(int speed) {
         case 1: delayMs = 1000; break; // Lent
         case 2: delayMs = 500;  break; // Moyen
         case 3: delayMs = 200;  break; // Rapide
-        case 5: delayMs = 50;   break; // Très rapide
+        case 5: delayMs = 40;   break; // Très rapide
         default: delayMs = 500; break;
     }
 }
 
+// Récupère le délai actuel en millisecondes
 int GUIView::getDelayMs() const {
     return delayMs;
 }
 
 void GUIView::render() {
-    if (!game) return;
+    if (!game) return;  // Sécurité : s'assurer que le jeu est bien initialisé
     
     Grid* grid = game->getGrid();
-    if (!grid) return;
+    if (!grid) return;  // Sécurité : s'assurer que la grille est chargée
     
+    // Configuration des dimensions de la fenêtre
     int cellSize = 15;
     int windowWidth = grid->getCols() * cellSize;
     int windowHeight = grid->getRows() * cellSize;
     
+    // Création de la fenêtre SFML
     sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "Jeu de la Vie - Conway");
-    window.setFramerateLimit(60);
+    window.setFramerateLimit(60);  // Limite le rafraîchissement des événements/dessin
     
     Grid* previousGrid = nullptr;
     
-    // Afficher les contrôles
+    // Afficher les contrôles dans la console
     std::cout << "\n=== CONTROLES ===" << std::endl;
     std::cout << "1 : Vitesse lente" << std::endl;
     std::cout << "2 : Vitesse moyenne" << std::endl;
@@ -56,6 +59,8 @@ void GUIView::render() {
     
     while (window.isOpen()) {
         sf::Event event;
+
+        //   Gestion des événements utilisateur
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
                 window.close();
@@ -138,7 +143,7 @@ void GUIView::render() {
         }
         
         // Dessiner
-        window.clear(sf::Color::White);
+        window.clear(sf::Color::White); // Effacer la fenetre en blanc
         
         sf::RectangleShape cellShape(sf::Vector2f(cellSize - 1, cellSize - 1));
         
@@ -147,17 +152,17 @@ void GUIView::render() {
                 Cell* cell = grid->getCell(i, j);
                 cellShape.setPosition(j * cellSize, i * cellSize);
                 
-                ObstacleCell* obstacle = dynamic_cast<ObstacleCell*>(cell);
+                ObstacleCell* obstacle = dynamic_cast<ObstacleCell*>(cell); // Essaie de convertir en ObstacleCell
                 
                 if (obstacle) {
                     // Obstacle - couleur rouge
                     if (obstacle->isAlive()) {
                         cellShape.setFillColor(sf::Color::Green); // Obstacle vivant
                     } else {
-                        cellShape.setFillColor(sf::Color::Red); // Obstacle mort (rouge foncé)
+                        cellShape.setFillColor(sf::Color::Red); // Obstacle mort 
                     }
                 } else if (cell && cell->isAlive()) {
-                    cellShape.setFillColor(sf::Color::Black);
+                    cellShape.setFillColor(sf::Color::Black); // cellule vivante
                 } else {
                     cellShape.setFillColor(sf::Color(220, 220, 220));
                 }
@@ -166,8 +171,8 @@ void GUIView::render() {
             }
         }
         
-        window.display();
+        window.display(); // Affiche la frame mise à jour à l'écran
     }
     
-    if (previousGrid) delete previousGrid;
+    if (previousGrid) delete previousGrid; // Nettoyage final
 }
