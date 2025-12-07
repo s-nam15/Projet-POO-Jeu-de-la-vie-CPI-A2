@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I"/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/include"
 
-CXX_FLAGS = -std=gnu++17 -Wall -Wextra -pedantic
+CXX_FLAGS = -std=gnu++17 -Wall -Wextra -pedantic -fopenmp
 

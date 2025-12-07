@@ -123,6 +123,8 @@ CMakeFiles/game_of_life.dir/src/Grid.cpp.o: \
  /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/Rule.h \
  /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/AliveCell.h \
  /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/DeadCell.h \
+ /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/include/ObstacleCell.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/omp.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/istream \
  /usr/include/c++/13/ios /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception_ptr.h \

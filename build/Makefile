@@ -385,6 +385,60 @@ src/Grid.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Grid.cpp.s
 .PHONY : src/Grid.cpp.s
 
+src/ObstacleCell.o: src/ObstacleCell.cpp.o
+.PHONY : src/ObstacleCell.o
+
+# target to build an object file
+src/ObstacleCell.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/ObstacleCell.cpp.o
+.PHONY : src/ObstacleCell.cpp.o
+
+src/ObstacleCell.i: src/ObstacleCell.cpp.i
+.PHONY : src/ObstacleCell.i
+
+# target to preprocess a source file
+src/ObstacleCell.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/ObstacleCell.cpp.i
+.PHONY : src/ObstacleCell.cpp.i
+
+src/ObstacleCell.s: src/ObstacleCell.cpp.s
+.PHONY : src/ObstacleCell.s
+
+# target to generate assembly for a file
+src/ObstacleCell.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/ObstacleCell.cpp.s
+.PHONY : src/ObstacleCell.cpp.s
+
+src/PatternManager.o: src/PatternManager.cpp.o
+.PHONY : src/PatternManager.o
+
+# target to build an object file
+src/PatternManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/PatternManager.cpp.o
+.PHONY : src/PatternManager.cpp.o
+
+src/PatternManager.i: src/PatternManager.cpp.i
+.PHONY : src/PatternManager.i
+
+# target to preprocess a source file
+src/PatternManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/PatternManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/PatternManager.cpp.i
+.PHONY : src/PatternManager.cpp.i
+
+src/PatternManager.s: src/PatternManager.cpp.s
+.PHONY : src/PatternManager.s
+
+# target to generate assembly for a file
+src/PatternManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game_of_life.dir/build.make CMakeFiles/game_of_life.dir/src/PatternManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/PatternManager.cpp.s
+.PHONY : src/PatternManager.cpp.s
+
 src/View.o: src/View.cpp.o
 .PHONY : src/View.o
 
@@ -497,6 +551,12 @@ help:
 	@echo "... src/Grid.o"
 	@echo "... src/Grid.i"
 	@echo "... src/Grid.s"
+	@echo "... src/ObstacleCell.o"
+	@echo "... src/ObstacleCell.i"
+	@echo "... src/ObstacleCell.s"
+	@echo "... src/PatternManager.o"
+	@echo "... src/PatternManager.i"
+	@echo "... src/PatternManager.s"
 	@echo "... src/View.o"
 	@echo "... src/View.i"
 	@echo "... src/View.s"

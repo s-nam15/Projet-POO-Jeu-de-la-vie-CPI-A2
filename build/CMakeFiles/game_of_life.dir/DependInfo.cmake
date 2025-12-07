@@ -17,6 +17,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/GUIView.cpp" "CMakeFiles/game_of_life.dir/src/GUIView.cpp.o" "gcc" "CMakeFiles/game_of_life.dir/src/GUIView.cpp.o.d"
   "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/Game.cpp" "CMakeFiles/game_of_life.dir/src/Game.cpp.o" "gcc" "CMakeFiles/game_of_life.dir/src/Game.cpp.o.d"
   "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/Grid.cpp" "CMakeFiles/game_of_life.dir/src/Grid.cpp.o" "gcc" "CMakeFiles/game_of_life.dir/src/Grid.cpp.o.d"
+  "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/ObstacleCell.cpp" "CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o" "gcc" "CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o.d"
+  "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/PatternManager.cpp" "CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o" "gcc" "CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o.d"
   "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/View.cpp" "CMakeFiles/game_of_life.dir/src/View.cpp.o" "gcc" "CMakeFiles/game_of_life.dir/src/View.cpp.o.d"
   "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/main.cpp" "CMakeFiles/game_of_life.dir/src/main.cpp.o" "gcc" "CMakeFiles/game_of_life.dir/src/main.cpp.o.d"
   )

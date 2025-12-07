@@ -111,10 +111,24 @@ CMakeFiles/game_of_life.dir/src/DeadCell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_of_life.dir/src/DeadCell.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/DeadCell.cpp" -o CMakeFiles/game_of_life.dir/src/DeadCell.cpp.s
 
+CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o: CMakeFiles/game_of_life.dir/flags.make
+CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/ObstacleCell.cpp
+CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o: CMakeFiles/game_of_life.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o -MF CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o.d -o CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/ObstacleCell.cpp"
+
+CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/ObstacleCell.cpp" > CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.i
+
+CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/ObstacleCell.cpp" -o CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.s
+
 CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.o: CMakeFiles/game_of_life.dir/flags.make
 CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/ConwayRule.cpp
 CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.o: CMakeFiles/game_of_life.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.o -MF CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.o.d -o CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/ConwayRule.cpp"
 
 CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.s: cmake_force
 CMakeFiles/game_of_life.dir/src/Grid.cpp.o: CMakeFiles/game_of_life.dir/flags.make
 CMakeFiles/game_of_life.dir/src/Grid.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/Grid.cpp
 CMakeFiles/game_of_life.dir/src/Grid.cpp.o: CMakeFiles/game_of_life.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game_of_life.dir/src/Grid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game_of_life.dir/src/Grid.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_of_life.dir/src/Grid.cpp.o -MF CMakeFiles/game_of_life.dir/src/Grid.cpp.o.d -o CMakeFiles/game_of_life.dir/src/Grid.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/Grid.cpp"
 
 CMakeFiles/game_of_life.dir/src/Grid.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/game_of_life.dir/src/Grid.cpp.s: cmake_force
 CMakeFiles/game_of_life.dir/src/Game.cpp.o: CMakeFiles/game_of_life.dir/flags.make
 CMakeFiles/game_of_life.dir/src/Game.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/Game.cpp
 CMakeFiles/game_of_life.dir/src/Game.cpp.o: CMakeFiles/game_of_life.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game_of_life.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game_of_life.dir/src/Game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_of_life.dir/src/Game.cpp.o -MF CMakeFiles/game_of_life.dir/src/Game.cpp.o.d -o CMakeFiles/game_of_life.dir/src/Game.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/Game.cpp"
 
 CMakeFiles/game_of_life.dir/src/Game.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/game_of_life.dir/src/Game.cpp.s: cmake_force
 CMakeFiles/game_of_life.dir/src/ConsoleView.cpp.o: CMakeFiles/game_of_life.dir/flags.make
 CMakeFiles/game_of_life.dir/src/ConsoleView.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/ConsoleView.cpp
 CMakeFiles/game_of_life.dir/src/ConsoleView.cpp.o: CMakeFiles/game_of_life.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game_of_life.dir/src/ConsoleView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game_of_life.dir/src/ConsoleView.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_of_life.dir/src/ConsoleView.cpp.o -MF CMakeFiles/game_of_life.dir/src/ConsoleView.cpp.o.d -o CMakeFiles/game_of_life.dir/src/ConsoleView.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/ConsoleView.cpp"
 
 CMakeFiles/game_of_life.dir/src/ConsoleView.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/game_of_life.dir/src/ConsoleView.cpp.s: cmake_force
 CMakeFiles/game_of_life.dir/src/View.cpp.o: CMakeFiles/game_of_life.dir/flags.make
 CMakeFiles/game_of_life.dir/src/View.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/View.cpp
 CMakeFiles/game_of_life.dir/src/View.cpp.o: CMakeFiles/game_of_life.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game_of_life.dir/src/View.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game_of_life.dir/src/View.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_of_life.dir/src/View.cpp.o -MF CMakeFiles/game_of_life.dir/src/View.cpp.o.d -o CMakeFiles/game_of_life.dir/src/View.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/View.cpp"
 
 CMakeFiles/game_of_life.dir/src/View.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/game_of_life.dir/src/View.cpp.s: cmake_force
 CMakeFiles/game_of_life.dir/src/GUIView.cpp.o: CMakeFiles/game_of_life.dir/flags.make
 CMakeFiles/game_of_life.dir/src/GUIView.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/GUIView.cpp
 CMakeFiles/game_of_life.dir/src/GUIView.cpp.o: CMakeFiles/game_of_life.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game_of_life.dir/src/GUIView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game_of_life.dir/src/GUIView.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_of_life.dir/src/GUIView.cpp.o -MF CMakeFiles/game_of_life.dir/src/GUIView.cpp.o.d -o CMakeFiles/game_of_life.dir/src/GUIView.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/GUIView.cpp"
 
 CMakeFiles/game_of_life.dir/src/GUIView.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/game_of_life.dir/src/GUIView.cpp.s: cmake_force
 CMakeFiles/game_of_life.dir/src/FileManager.cpp.o: CMakeFiles/game_of_life.dir/flags.make
 CMakeFiles/game_of_life.dir/src/FileManager.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/FileManager.cpp
 CMakeFiles/game_of_life.dir/src/FileManager.cpp.o: CMakeFiles/game_of_life.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game_of_life.dir/src/FileManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/game_of_life.dir/src/FileManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_of_life.dir/src/FileManager.cpp.o -MF CMakeFiles/game_of_life.dir/src/FileManager.cpp.o.d -o CMakeFiles/game_of_life.dir/src/FileManager.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/FileManager.cpp"
 
 CMakeFiles/game_of_life.dir/src/FileManager.cpp.i: cmake_force
@@ -209,10 +223,24 @@ CMakeFiles/game_of_life.dir/src/FileManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_of_life.dir/src/FileManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/FileManager.cpp" -o CMakeFiles/game_of_life.dir/src/FileManager.cpp.s
 
+CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o: CMakeFiles/game_of_life.dir/flags.make
+CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/PatternManager.cpp
+CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o: CMakeFiles/game_of_life.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o -MF CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o.d -o CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/PatternManager.cpp"
+
+CMakeFiles/game_of_life.dir/src/PatternManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game_of_life.dir/src/PatternManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/PatternManager.cpp" > CMakeFiles/game_of_life.dir/src/PatternManager.cpp.i
+
+CMakeFiles/game_of_life.dir/src/PatternManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game_of_life.dir/src/PatternManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/PatternManager.cpp" -o CMakeFiles/game_of_life.dir/src/PatternManager.cpp.s
+
 CMakeFiles/game_of_life.dir/src/main.cpp.o: CMakeFiles/game_of_life.dir/flags.make
 CMakeFiles/game_of_life.dir/src/main.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/main.cpp
 CMakeFiles/game_of_life.dir/src/main.cpp.o: CMakeFiles/game_of_life.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/game_of_life.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/game_of_life.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game_of_life.dir/src/main.cpp.o -MF CMakeFiles/game_of_life.dir/src/main.cpp.o.d -o CMakeFiles/game_of_life.dir/src/main.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/main.cpp"
 
 CMakeFiles/game_of_life.dir/src/main.cpp.i: cmake_force
@@ -228,6 +256,7 @@ game_of_life_OBJECTS = \
 "CMakeFiles/game_of_life.dir/src/Cell.cpp.o" \
 "CMakeFiles/game_of_life.dir/src/AliveCell.cpp.o" \
 "CMakeFiles/game_of_life.dir/src/DeadCell.cpp.o" \
+"CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o" \
 "CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.o" \
 "CMakeFiles/game_of_life.dir/src/Grid.cpp.o" \
 "CMakeFiles/game_of_life.dir/src/Game.cpp.o" \
@@ -235,6 +264,7 @@ game_of_life_OBJECTS = \
 "CMakeFiles/game_of_life.dir/src/View.cpp.o" \
 "CMakeFiles/game_of_life.dir/src/GUIView.cpp.o" \
 "CMakeFiles/game_of_life.dir/src/FileManager.cpp.o" \
+"CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o" \
 "CMakeFiles/game_of_life.dir/src/main.cpp.o"
 
 # External object files for target game_of_life
@@ -243,6 +273,7 @@ game_of_life_EXTERNAL_OBJECTS =
 game_of_life: CMakeFiles/game_of_life.dir/src/Cell.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/src/AliveCell.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/src/DeadCell.cpp.o
+game_of_life: CMakeFiles/game_of_life.dir/src/ObstacleCell.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/src/ConwayRule.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/src/Grid.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/src/Game.cpp.o
@@ -250,13 +281,16 @@ game_of_life: CMakeFiles/game_of_life.dir/src/ConsoleView.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/src/View.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/src/GUIView.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/src/FileManager.cpp.o
+game_of_life: CMakeFiles/game_of_life.dir/src/PatternManager.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/src/main.cpp.o
 game_of_life: CMakeFiles/game_of_life.dir/build.make
 game_of_life: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1
 game_of_life: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1
 game_of_life: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1
+game_of_life: /usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so
+game_of_life: /usr/lib/x86_64-linux-gnu/libpthread.a
 game_of_life: CMakeFiles/game_of_life.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable game_of_life"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable game_of_life"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game_of_life.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,7 +1,9 @@
 #include "GUIView.h"
 #include "Game.h"
+#include "ObstacleCell.h"
 #include "Grid.h"
 #include "Cell.h"
+#include "PatternManager.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
@@ -43,6 +45,11 @@ void GUIView::render() {
     std::cout << "3 : Vitesse rapide" << std::endl;
     std::cout << "4 : Vitesse tres rapide" << std::endl;
     std::cout << "ESPACE : Pause/Reprendre" << std::endl;
+    std::cout << "G : Placer Glider" << std::endl;
+    std::cout << "B : Placer Blinker" << std::endl;
+    std::cout << "K : Placer Block" << std::endl;
+    std::cout << "T : Placer Toad" << std::endl;
+    std::cout << "N : Placer Beacon" << std::endl;
     std::cout << "ECHAP : Quitter\n" << std::endl;
     
     bool paused = false;
@@ -80,6 +87,27 @@ void GUIView::render() {
                 else if (event.key.code == sf::Keyboard::Space) {
                     paused = !paused;
                     std::cout << (paused ? "PAUSE" : "REPRENDRE") << std::endl;
+                }
+                // Placement de motifs (au centre de la grille)
+                else if (event.key.code == sf::Keyboard::G) {
+                    PatternManager::placeGlider(grid, grid->getRows()/2, grid->getCols()/2);
+                    std::cout << "Glider place !" << std::endl;
+                }
+                else if (event.key.code == sf::Keyboard::B) {
+                    PatternManager::placeBlinker(grid, grid->getRows()/2, grid->getCols()/2);
+                    std::cout << "Blinker place !" << std::endl;
+                }
+                else if (event.key.code == sf::Keyboard::K) {
+                    PatternManager::placeBlock(grid, grid->getRows()/2, grid->getCols()/2);
+                    std::cout << "Block place !" << std::endl;
+                }
+                else if (event.key.code == sf::Keyboard::T) {
+                    PatternManager::placeToad(grid, grid->getRows()/2, grid->getCols()/2);
+                    std::cout << "Toad place !" << std::endl;
+                }
+                else if (event.key.code == sf::Keyboard::N) {
+                    PatternManager::placeBeacon(grid, grid->getRows()/2, grid->getCols()/2);
+                    std::cout << "Beacon place !" << std::endl;
                 }
             }
         }
@@ -119,10 +147,19 @@ void GUIView::render() {
                 Cell* cell = grid->getCell(i, j);
                 cellShape.setPosition(j * cellSize, i * cellSize);
                 
-                if (cell && cell->isAlive()) {
+                ObstacleCell* obstacle = dynamic_cast<ObstacleCell*>(cell);
+                
+                if (obstacle) {
+                    // Obstacle - couleur rouge
+                    if (obstacle->isAlive()) {
+                        cellShape.setFillColor(sf::Color::Green); // Obstacle vivant
+                    } else {
+                        cellShape.setFillColor(sf::Color::Red); // Obstacle mort (rouge foncé)
+                    }
+                } else if (cell && cell->isAlive()) {
                     cellShape.setFillColor(sf::Color::Black);
                 } else {
-                    cellShape.setFillColor(sf::Color(225, 225, 225));
+                    cellShape.setFillColor(sf::Color(220, 220, 220));
                 }
                 
                 window.draw(cellShape);

@@ -111,10 +111,24 @@ CMakeFiles/tests.dir/src/DeadCell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/DeadCell.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/DeadCell.cpp" -o CMakeFiles/tests.dir/src/DeadCell.cpp.s
 
+CMakeFiles/tests.dir/src/ObstacleCell.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/src/ObstacleCell.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/ObstacleCell.cpp
+CMakeFiles/tests.dir/src/ObstacleCell.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tests.dir/src/ObstacleCell.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/ObstacleCell.cpp.o -MF CMakeFiles/tests.dir/src/ObstacleCell.cpp.o.d -o CMakeFiles/tests.dir/src/ObstacleCell.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/ObstacleCell.cpp"
+
+CMakeFiles/tests.dir/src/ObstacleCell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/src/ObstacleCell.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/ObstacleCell.cpp" > CMakeFiles/tests.dir/src/ObstacleCell.cpp.i
+
+CMakeFiles/tests.dir/src/ObstacleCell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/ObstacleCell.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/ObstacleCell.cpp" -o CMakeFiles/tests.dir/src/ObstacleCell.cpp.s
+
 CMakeFiles/tests.dir/src/ConwayRule.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/src/ConwayRule.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/ConwayRule.cpp
 CMakeFiles/tests.dir/src/ConwayRule.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tests.dir/src/ConwayRule.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tests.dir/src/ConwayRule.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/ConwayRule.cpp.o -MF CMakeFiles/tests.dir/src/ConwayRule.cpp.o.d -o CMakeFiles/tests.dir/src/ConwayRule.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/ConwayRule.cpp"
 
 CMakeFiles/tests.dir/src/ConwayRule.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/tests.dir/src/ConwayRule.cpp.s: cmake_force
 CMakeFiles/tests.dir/src/Grid.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/src/Grid.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/Grid.cpp
 CMakeFiles/tests.dir/src/Grid.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tests.dir/src/Grid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tests.dir/src/Grid.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/Grid.cpp.o -MF CMakeFiles/tests.dir/src/Grid.cpp.o.d -o CMakeFiles/tests.dir/src/Grid.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/Grid.cpp"
 
 CMakeFiles/tests.dir/src/Grid.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/tests.dir/src/Grid.cpp.s: cmake_force
 CMakeFiles/tests.dir/src/Game.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/src/Game.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/Game.cpp
 CMakeFiles/tests.dir/src/Game.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tests.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tests.dir/src/Game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/Game.cpp.o -MF CMakeFiles/tests.dir/src/Game.cpp.o.d -o CMakeFiles/tests.dir/src/Game.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/Game.cpp"
 
 CMakeFiles/tests.dir/src/Game.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/tests.dir/src/Game.cpp.s: cmake_force
 CMakeFiles/tests.dir/src/ConsoleView.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/src/ConsoleView.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/ConsoleView.cpp
 CMakeFiles/tests.dir/src/ConsoleView.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tests.dir/src/ConsoleView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tests.dir/src/ConsoleView.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/ConsoleView.cpp.o -MF CMakeFiles/tests.dir/src/ConsoleView.cpp.o.d -o CMakeFiles/tests.dir/src/ConsoleView.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/ConsoleView.cpp"
 
 CMakeFiles/tests.dir/src/ConsoleView.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/tests.dir/src/ConsoleView.cpp.s: cmake_force
 CMakeFiles/tests.dir/src/View.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/src/View.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/View.cpp
 CMakeFiles/tests.dir/src/View.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tests.dir/src/View.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tests.dir/src/View.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/View.cpp.o -MF CMakeFiles/tests.dir/src/View.cpp.o.d -o CMakeFiles/tests.dir/src/View.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/View.cpp"
 
 CMakeFiles/tests.dir/src/View.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/tests.dir/src/View.cpp.s: cmake_force
 CMakeFiles/tests.dir/src/GUIView.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/src/GUIView.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/GUIView.cpp
 CMakeFiles/tests.dir/src/GUIView.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tests.dir/src/GUIView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tests.dir/src/GUIView.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/GUIView.cpp.o -MF CMakeFiles/tests.dir/src/GUIView.cpp.o.d -o CMakeFiles/tests.dir/src/GUIView.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/GUIView.cpp"
 
 CMakeFiles/tests.dir/src/GUIView.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/tests.dir/src/GUIView.cpp.s: cmake_force
 CMakeFiles/tests.dir/src/FileManager.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/src/FileManager.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/FileManager.cpp
 CMakeFiles/tests.dir/src/FileManager.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tests.dir/src/FileManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tests.dir/src/FileManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/FileManager.cpp.o -MF CMakeFiles/tests.dir/src/FileManager.cpp.o.d -o CMakeFiles/tests.dir/src/FileManager.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/FileManager.cpp"
 
 CMakeFiles/tests.dir/src/FileManager.cpp.i: cmake_force
@@ -209,10 +223,24 @@ CMakeFiles/tests.dir/src/FileManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/FileManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/FileManager.cpp" -o CMakeFiles/tests.dir/src/FileManager.cpp.s
 
+CMakeFiles/tests.dir/src/PatternManager.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/src/PatternManager.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/src/PatternManager.cpp
+CMakeFiles/tests.dir/src/PatternManager.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/tests.dir/src/PatternManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/PatternManager.cpp.o -MF CMakeFiles/tests.dir/src/PatternManager.cpp.o.d -o CMakeFiles/tests.dir/src/PatternManager.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/PatternManager.cpp"
+
+CMakeFiles/tests.dir/src/PatternManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/src/PatternManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/PatternManager.cpp" > CMakeFiles/tests.dir/src/PatternManager.cpp.i
+
+CMakeFiles/tests.dir/src/PatternManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/PatternManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/src/PatternManager.cpp" -o CMakeFiles/tests.dir/src/PatternManager.cpp.s
+
 CMakeFiles/tests.dir/tests/tests.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/tests/tests.cpp.o: /mnt/c/Users/a054865/OneDrive\ -\ Alliance/Documents/Project/tests/tests.cpp
 CMakeFiles/tests.dir/tests/tests.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tests.dir/tests/tests.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/tests.dir/tests/tests.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/tests.cpp.o -MF CMakeFiles/tests.dir/tests/tests.cpp.o.d -o CMakeFiles/tests.dir/tests/tests.cpp.o -c "/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/tests/tests.cpp"
 
 CMakeFiles/tests.dir/tests/tests.cpp.i: cmake_force
@@ -228,6 +256,7 @@ tests_OBJECTS = \
 "CMakeFiles/tests.dir/src/Cell.cpp.o" \
 "CMakeFiles/tests.dir/src/AliveCell.cpp.o" \
 "CMakeFiles/tests.dir/src/DeadCell.cpp.o" \
+"CMakeFiles/tests.dir/src/ObstacleCell.cpp.o" \
 "CMakeFiles/tests.dir/src/ConwayRule.cpp.o" \
 "CMakeFiles/tests.dir/src/Grid.cpp.o" \
 "CMakeFiles/tests.dir/src/Game.cpp.o" \
@@ -235,6 +264,7 @@ tests_OBJECTS = \
 "CMakeFiles/tests.dir/src/View.cpp.o" \
 "CMakeFiles/tests.dir/src/GUIView.cpp.o" \
 "CMakeFiles/tests.dir/src/FileManager.cpp.o" \
+"CMakeFiles/tests.dir/src/PatternManager.cpp.o" \
 "CMakeFiles/tests.dir/tests/tests.cpp.o"
 
 # External object files for target tests
@@ -243,6 +273,7 @@ tests_EXTERNAL_OBJECTS =
 tests: CMakeFiles/tests.dir/src/Cell.cpp.o
 tests: CMakeFiles/tests.dir/src/AliveCell.cpp.o
 tests: CMakeFiles/tests.dir/src/DeadCell.cpp.o
+tests: CMakeFiles/tests.dir/src/ObstacleCell.cpp.o
 tests: CMakeFiles/tests.dir/src/ConwayRule.cpp.o
 tests: CMakeFiles/tests.dir/src/Grid.cpp.o
 tests: CMakeFiles/tests.dir/src/Game.cpp.o
@@ -250,13 +281,16 @@ tests: CMakeFiles/tests.dir/src/ConsoleView.cpp.o
 tests: CMakeFiles/tests.dir/src/View.cpp.o
 tests: CMakeFiles/tests.dir/src/GUIView.cpp.o
 tests: CMakeFiles/tests.dir/src/FileManager.cpp.o
+tests: CMakeFiles/tests.dir/src/PatternManager.cpp.o
 tests: CMakeFiles/tests.dir/tests/tests.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1
 tests: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1
 tests: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1
+tests: /usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so
+tests: /usr/lib/x86_64-linux-gnu/libpthread.a
 tests: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/a054865/OneDrive - Alliance/Documents/Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,6 +1,8 @@
 #include "Grid.h"
 #include "AliveCell.h"
 #include "DeadCell.h"
+#include "ObstacleCell.h"
+#include <omp.h>
 #include <fstream>
 #include <stdexcept>
 #include <iostream>
@@ -42,22 +44,27 @@ Cell* Grid::getCell(int row, int col) const {
 
 int Grid::countAliveNeighbors(int row, int col) const {
     int count = 0;
+    
+    // Parcourir les 8 voisins
     for (int dr = -1; dr <= 1; ++dr) {
         for (int dc = -1; dc <= 1; ++dc) {
             if (dr == 0 && dc == 0) continue;
-            int newRow = row + dr;
-            int newCol = col + dc;
-            if (newRow >= 0 && newRow < rows && newCol >= 0 && newCol < cols) {
-                if (cells[getIndex(newRow, newCol)]->isAlive()) {
-                    count++;
-                }
+            
+            // GRILLE TORIQUE : utiliser modulo pour wraparound
+            int newRow = (row + dr + rows) % rows;
+            int newCol = (col + dc + cols) % cols;
+            
+            if (cells[getIndex(newRow, newCol)]->isAlive()) {
+                count++;
             }
         }
     }
+    
     return count;
 }
 
 void Grid::applyRules(Rule* rule) {
+    #pragma omp parallel for collapse(2)
     for (int row = 0; row < rows; ++row) {
         for (int col = 0; col < cols; ++col) {
             Cell* cell = getCell(row, col);
@@ -94,8 +101,14 @@ void Grid::loadFile(const std::string& path) {
             if (!(file >> state)) {
                 throw std::runtime_error("Erreur de lecture");
             }
+            
+            // MODIFICATION ICI : support des obstacles
             if (state == 1) {
                 cells.push_back(new AliveCell());
+            } else if (state == 2) {
+                cells.push_back(new ObstacleCell(false)); // Obstacle mort
+            } else if (state == 3) {
+                cells.push_back(new ObstacleCell(true));  // Obstacle vivant
             } else {
                 cells.push_back(new DeadCell());
             }
@@ -129,7 +142,7 @@ bool Grid::isEqual(const Grid& other) const {
             return false;
         }
     }
-    return true;
+    return true; 
 }
 
 Grid* Grid::clone() const {

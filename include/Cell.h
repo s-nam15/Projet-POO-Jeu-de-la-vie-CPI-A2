@@ -15,7 +15,7 @@ public:
     bool getNextState() const;
 
     // Setters
-    void setNextState(bool state);
+virtual void setNextState(bool state);
     
     // Met à jour l'état actuel avec le prochain état calculé
     void updateState();
