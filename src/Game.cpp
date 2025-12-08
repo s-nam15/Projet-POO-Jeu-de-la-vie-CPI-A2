@@ -41,7 +41,7 @@ void Game::runConsole() {
         fs::create_directory(outputDir);
     }
     
-    std::cout << "Mode console - Simulation de " << iterations << " iterations" << std::endl;
+    std::cout << "Mode console - Simulation de " << iterations << " itérations" << std::endl;
     
     std::string filename = outputDir + "/iteration_0.txt";
     grid->saveToFile(filename);
